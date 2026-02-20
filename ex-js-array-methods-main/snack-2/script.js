@@ -4,10 +4,10 @@ const people = [
   { name: 'Marco', age: 67 }
 ];
 
-people.forEach(name => {
-  console.log(name.name);
-    
-});
+const nomi = people.map(perosna=>{
+  return perosna.name
+}).join(" , ")
+console.log(nomi);
 
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
