@@ -11,4 +11,18 @@ const zucchine = [
   { type: 'Calabrese', weight: 14, length: 4 },
 ];
 
+let zucchineLunghe = []
+let zucchineCorte = []
+
+zucchine.forEach(zucchini => {
+    if(zucchini.length >= 15){
+      zucchineLunghe.push(zucchini)
+    }else{
+      zucchineCorte.push(zucchini)
+    }
+})
+console.log(zucchineLunghe);
+console.log(zucchineCorte);
+
+
 // A partire dall'array fornito, crea due array. Uno con le zucchine più lunghe di almeno 15cm. L'altro con le restanti.
